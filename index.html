@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Rachit Goswami | Frontend Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">Rachit<span>Goswami</span></div>
+            <nav class="nav" id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#info">Info</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero with video + typing + image -->
+    <section class="hero fade-up" id="home">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="bg-video.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content hero-split">
+            <div class="hero-text">
+                <p class="tag">Frontend Web Developer</p>
+                <h1 class="hero-title">
+                    Hello, I’m
+                    <span class="typewriter-name">Rachit Goswami</span>
+                </h1>
+
+                <p class="sub">
+                    I build clean, responsive and modern web interfaces using
+                    <strong>HTML, CSS, Bootstrap, JavaScript, SASS, jQuery and ReactJS</strong>.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn outline">Let’s Connect</a>
+                </div>
+            </div>
+
+            <!-- Your image -->
+            <div class="hero-image-wrapper fade-right">
+                <div class="hero-image-glow"></div>
+                <img src="https://tse4.mm.bing.net/th/id/OIP.sPAvyJF9tKFk3dCSe0Ie9wHaIY?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=184&h=208&c=7&dpr=1.3&o=7&rm=3"
+                    alt="Rachit Goswami" class="hero-image" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section fade-left" id="about">
+        <div class="container about-section">
+            <div class="about-card">
+                <h2 class="section-title">About <span>Me</span></h2>
+
+                <p class="about-main">
+                    I enjoy crafting experiences where design meets logic — interfaces that look clean,
+                    feel smooth and load fast on every device.
+                </p>
+                <p class="about-main">
+                    My focus is on modern frontend development: reusable components, semantic HTML,
+                    scalable CSS architectures and micro-interactions that make a page feel alive.
+                </p>
+                <p class="about-main">
+                    When building UIs, I pay attention to typography, spacing, color contrast and
+                    accessibility so that users can enjoy the product without thinking about the
+                    underlying complexity.
+                </p>
+
+                <div class="about-highlights">
+                    <div class="chip">🎧 Interactive music & media layouts</div>
+                    <div class="chip">📊 Admin dashboards & data views</div>
+                    <div class="chip">⚡ Performance‑first responsive design</div>
+                    <div class="chip">🧩 Reusable components & clean structure</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info cards -->
+    <section class="section fade-right" id="info">
+        <div class="container info-section">
+            <h2 class="section-title">Contact <span>Info</span></h2>
+
+            <div class="info-layout">
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <span>📍</span>
+                        </div>
+                        <div class="info-text">
+                            <p class="info-label">Location</p>
+                            <p class="info-main">India</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <span>✉️</span>
+                        </div>
+                        <div class="info-text">
+                            <p class="info-label">Email</p>
+                            <p class="info-main">
+                                <a href="mailto:grachit872@gmail.com" class="highlight-link">
+                                    grachit872@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <span>📞</span>
+                        </div>
+                        <div class="info-text">
+                            <p class="info-label">Phone</p>
+                            <p class="info-main">
+                                <a href="tel:9084140158" class="highlight-link">
+                                    9084140158
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <span>🌐</span>
+                        </div>
+                        <div class="info-text">
+                            <p class="info-label">Connect With Me</p>
+                            <div class="info-socials">
+                                <a href="https://www.linkedin.com/in/rachitgoswami" target="_blank" title="LinkedIn">
+                                    in
+                                </a>
+                                <a href="https://github.com/grachit872-spec" target="_blank" title="GitHub">
+                                    GH
+                                </a>
+                                <a href="#contact" title="Message">
+                                    💬
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section fade-right" id="skills">
+        <div class="container">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>HTML & CSS</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill s-html"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>JavaScript</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill s-js"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>ReactJS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill s-react"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>Bootstrap</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill s-bootstrap"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>SASS</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill s-sass"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>jQuery</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill s-jquery"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section fade-up" id="projects">
+        <div class="container">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            <div class="projects-grid">
+                <!-- Spotify -->
+                <div class="project-card tilt-hover">
+                    <a href="https://github.com/grachit872-spec/Spotify" target="_blank" rel="noopener noreferrer"
+                        class="project-link">
+                        <div class="project-tag spotify">Spotify Clone</div>
+                        <h3>Spotify UI Clone</h3>
+                        <p>
+                            A modern music streaming interface inspired by Spotify,
+                            featuring responsive layouts, playlist-style sections and
+                            reusable UI components.
+                        </p>
+                        <p class="tech">Tech stack: ReactJS, SASS, JavaScript</p>
+                        <span class="project-cta">Open on GitHub →</span>
+                    </a>
+                </div>
+
+                <!-- RMS -->
+                <div class="project-card tilt-hover">
+                    <a href="https://github.com/grachit872-spec/rms" target="_blank" rel="noopener noreferrer"
+                        class="project-link">
+                        <div class="project-tag rms">RMS Dashboard</div>
+                        <h3>RMS Website</h3>
+                        <p>
+                            A responsive management dashboard with cards, tables and a
+                            clean admin-style layout suitable for record or resource
+                            management.
+                        </p>
+                        <p class="tech">Tech stack: HTML, CSS, Bootstrap</p>
+                        <span class="project-cta">Open on GitHub →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section fade-down" id="contact">
+        <div class="container contact-unique">
+            <div class="contact-left">
+                <h2 class="section-title">Let’s <span>Build</span> Together</h2>
+                <p class="contact-intro">
+                    Have a project idea in mind — a streaming UI, a dashboard or
+                    something completely different? Share the details and let’s
+                    turn it into a clean and modern web experience.
+                </p>
+                <ul class="contact-pill-list">
+                    <li>🚀 Frontend projects</li>
+                    <li>🎧 Music / media UI</li>
+                    <li>📊 Dashboards & RMS</li>
+                    <li>🤝 Internships & roles</li>
+                </ul>
+            </div>
+
+            <div class="contact-right">
+                <div class="contact-card">
+                    <p class="contact-card-title">Send a Message</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="field-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="from_name" placeholder="Your Name" required />
+                        </div>
+                        <div class="field-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="from_email" placeholder="Your Email" required />
+                        </div>
+                        <div class="field-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell me about your project or idea"></textarea>
+                        </div>
+                        <button type="submit" class="btn primary full">Send Message</button>
+                        <p class="form-status" id="formStatus"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Rachit Goswami · Frontend Developer</p>
+    </footer>
+
+
+    <script>
+        // Mobile nav toggle
+        const navToggle = document.getElementById("navToggle");
+        const navMenu = document.getElementById("navMenu");
+
+        if (navToggle && navMenu) {
+            navToggle.addEventListener("click", () => {
+                navMenu.classList.toggle("open");
+            });
+        }
+
+        // Contact form handler (demo – EmailJS lagane par yahan change karein)
+        const form = document.getElementById("contactForm");
+        const status = document.getElementById("formStatus");
+
+        if (form && status) {
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                status.textContent = "Thank you! Your message has been received (demo only).";
+                status.classList.add("status-show");
+                setTimeout(() => {
+                    status.classList.remove("status-show");
+                    status.textContent = "";
+                }, 3000);
+                form.reset();
+            });
+        }
+
+        // Scroll reveal animations  b
+        const animatedItems = document.querySelectorAll(
+            ".fade-up, .fade-down, .fade-left, .fade-right"
+        );
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.15 }
+        );
+
+        animatedItems.forEach((el) => observer.observe(el));
+
+        // jQuery: glow effect on skill cards
+        $(document).ready(function () {
+            $(".skill").hover(
+                function () {
+                    $(this).addClass("skill-glow");
+                },
+                function () {
+                    $(this).removeClass("skill-glow");
+                }
+            );
+        });
+
+    </script>
+
+    <!-- EmailJS (optional), jQuery and JS -->
+    <script src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
