@@ -27,6 +27,7 @@ body {
   background: radial-gradient(circle at top, #020617 0, #020013 55%);
   color: var(--text);
   line-height: 1.6;
+  overflow: hidden;
 }
 
 .container {
@@ -237,8 +238,8 @@ body {
 }
 
 .hero-image {
-  width: 230px;
-  height: 230px;
+  width: 350px;
+  height: 350px;
   border-radius: 999px;
   object-fit: cover;
   border: 3px solid rgba(148, 163, 184, 0.6);
