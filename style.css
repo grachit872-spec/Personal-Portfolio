@@ -27,7 +27,6 @@ body {
   background: radial-gradient(circle at top, #020617 0, #020013 55%);
   color: var(--text);
   line-height: 1.6;
-  overflow: hidden;
 }
 
 .container {
