@@ -29,7 +29,7 @@
     <!-- Hero with video + typing + image -->
     <section class="hero fade-up" id="home">
         <video class="hero-video" autoplay muted loop playsinline>
-            <source src="bg-video.mp4" type="video/mp4" />
+            <!-- <source src="bg-video.mp4" type="video/mp4" /> -->
         </video>
         <div class="hero-overlay"></div>
 
@@ -315,7 +315,9 @@
         <p>© 2025 Rachit Goswami · Frontend Developer</p>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- <script src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         // Mobile nav toggle
         const navToggle = document.getElementById("navToggle");
@@ -363,24 +365,41 @@
 
         animatedItems.forEach((el) => observer.observe(el));
 
-        // jQuery: glow effect on skill cards
-        $(document).ready(function () {
-            $(".skill").hover(
-                function () {
-                    $(this).addClass("skill-glow");
-                },
-                function () {
-                    $(this).removeClass("skill-glow");
-                }
-            );
-        });
 
+
+
+
+        // email-share
+
+       (function () {
+    emailjs.init("A4IsxuefzDT3ljpK-");
+})();
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let status = document.getElementById("formStatus");
+    status.innerText = "⏳ Sending...";
+    status.classList.add("status-show");
+
+    emailjs.sendForm(
+        "service_bh5niiq",
+        "template_2d6fqif",
+        this
+    )
+    .then(function () {
+        status.innerText = "✅ Message Sent Successfully!";
+    }, function (error) {
+        status.innerText = "❌ Failed to send!";
+        console.log("ERROR:", error);
+    });
+
+    this.reset();
+});
     </script>
 
     <!-- EmailJS (optional), jQuery and JS -->
-    <script src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="script.js"></script>
+
 </body>
 
 </html>
